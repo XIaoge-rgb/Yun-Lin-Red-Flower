@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术交流 - 云岭红踪</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .tech-banner {
+            height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://ts1.tc.mm.bing.net/th/id/R-C.166495f27356bf798e19855bbbccc0ab?rik=HBwudC3uAqJYxg&riu=http%3a%2f%2fyn.news.cn%2ftopic%2f2023-04%2f07%2f1310709121_16808585306441n.png&ehk=4kqCrJvNe110uPOrhxB5mTwyF9NlM39BE4RoQhLIJ%2fc%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .tech-banner h2 {
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+
+        .tech-content {
+            margin-top: 20px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .tech-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tech-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tech-card-content {
+            padding: 25px;
+        }
+
+        .tech-card h3 {
+            color: #e54c4c;
+            margin-bottom: 15px;
+        }
+
+        .tech-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+        .tech-table th, .tech-table td {
+            padding: 15px;
+            border: 1px solid #f0f0f0;
+            text-align: left;
+        }
+
+        .tech-table th {
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        .tech-table tr:hover {
+            background: #f9f9f9;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            color: #e54c4c;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            color: #666;
+            line-height: 1.8;
+            display: none; /* 初始隐藏答案 */
+        }
+
+        @media (max-width: 768px) {
+            .tech-banner h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">云岭红踪</a>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="products.html">产品中心</a>
+                <a href="culture.html">文化之旅</a>
+                <a href="tech.html" class="active">技术交流</a>
+                <a href="shop.html">在线商城</a>
+                <a href="help.html">助农行动</a>
+                <a href="about.html">关于我们</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 技术交流Banner -->
+    <section class="tech-banner">
+        <div>
+            <h2>红花种植技术交流</h2>
+            <p>探索昌宁红花科学种植与产业升级之路</p>
+        </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <section class="container page-section">
+        <h2 class="section-title">🌱 先进种植技术</h2>
+        
+        <div class="tech-grid">
+            <div class="tech-card">
+                <img src="https://ts1.tc.mm.bing.net/th/id/R-C.31545711c1d933f380fc14ddd20e3545?rik=IWJ19sv7nZmTeg&riu=http%3a%2f%2fd.51240.com%2fmap%2fweixing%2f16%2fc2%2fchangningxian_q2.jpg&ehk=qKQuYTu9IFdpdrKeHvzUzo3woWJ1EBiJYMWiExeLJaQ%3d&risl=&pid=ImgRaw&r=0" alt="山地河谷种植环境">
+                <div class="tech-card-content">
+                    <h3>地理环境适配技术</h3>
+                    <p>针对昌宁独特的山地河谷交错地形，研发了梯田式种植法，有效利用光热资源，提升红花苷含量30%以上。</p>
+                </div>
+            </div>
+            
+            <div class="tech-card">
+                <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.W1XPdBhycWpVSKJGdQIL9QAAAA?rs=1&pid=ImgDetMain" alt="轮作模式示意图">
+                <div class="tech-card-content">
+                    <h3>烤烟-红花-玉米轮作系统</h3>
+                    <p>创新采用三年轮作模式，有效改善土壤结构，减少病虫害，每亩地年综合收益提升2000元以上。</p>
+                </div>
+            </div>
+            
+            <div class="tech-card">
+                <img src="https://n.sinaimg.cn/sinakd20113/757/w950h607/20220831/4fc6-d6f4a9bf24f4e1f6ac6652955f619f1c.jpg" alt="智能化灌溉系统">
+                <div class="tech-card-content">
+                    <h3>智能化精准灌溉</h3>
+                    <p>引入物联网传感器，实时监测土壤湿度，结合AI算法实现精准灌溉，节水率达45%，同时提升红花品质。</p>
+                </div>
+            </div>
+
+            <!-- 新增种植技术 -->
+            <div class="tech-card">
+                <img src="https://cdn.feidoodoo.com/2022/09/20/7gxFY6TdoDhum7QYLL0K4fjL9hdvncpbFR8pzpKG.jpg" alt="新型肥料使用">
+                <div class="tech-card-content">
+                    <h3>新型有机肥料应用</h3>
+                    <p>采用自主研发的新型有机肥料，富含多种微量元素，能有效提高红花的生长速度和抗病能力，同时提升花朵的色泽和品质。</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 科研合作部分 -->
+        <div class="page-section">
+            <h2 class="section-title">👥 科研合作网络</h2>
+            
+            <div class="tech-content">
+                <p>我们与国内多家科研机构建立了深度合作关系，共同开展红花种植技术研发、品种改良和产业化应用研究。以下是部分合作成果：</p>
+                
+                <div class="tech-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>合作机构</th>
+                                <th>合作项目</th>
+                                <th>成果</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>中国农业科学院</td>
+                                <td>红花高苷品种选育</td>
+                                <td>成功培育出"云红1号"新品种，红花苷含量达2.8%</td>
+                            </tr>
+                            <tr>
+                                <td>云南农业大学</td>
+                                <td>有机种植技术体系构建</td>
+                                <td>建立全程有机种植标准，获得欧盟有机认证</td>
+                            </tr>
+                            <tr>
+                                <td>中科院昆明植物研究所</td>
+                                <td>红花活性成分提取技术</td>
+                                <td>研发低温萃取工艺，有效保留活性成分</td>
+                            </tr>
+                            <!-- 新增科研合作项目 -->
+                            <tr>
+                                <td>某农业科技公司</td>
+                                <td>红花种植智能化管理系统开发</td>
+                                <td>开发出一套智能化管理系统，可实时监控红花生长环境和病虫害情况，提高种植效率。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 技术标准部分 -->
+        <div class="page-section">
+            <h2 class="section-title">📏 质量控制标准</h2>
+            
+            <div class="tech-content">
+                <p>我们建立了从种植到加工的全产业链质量控制体系，确保每一份产品都符合高品质标准：</p>
+                
+                <ul style="margin-left: 20px; line-height: 2;">
+                    <li>种植环节：严格控制化肥和农药使用，实施GAP（良好农业规范）管理</li>
+                    <li>采收环节：采用晨露未晞时手工采摘，确保有效成分最大化保留</li>
+                    <li>加工环节：通过ISO22000食品安全管理体系认证，实施HACCP危害分析与关键控制点管理</li>
+                    <li>检测环节：每批产品经过18项指标检测，包括重金属残留、农药残留、有效成分含量等</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 常见问题部分 -->
+        <div class="page-section">
+            <h2 class="section-title">❓ 种植常见问题</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q：红花适合在哪些地区种植？</div>
+                <div class="faq-answer">A：红花喜温暖干燥气候，适应于阳光充足、排水良好的环境。昌宁独特的"天然温室"气候特别适合红花生长，一般年平均气温15-25℃，年降水量600-1000mm的地区均可尝试种植。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q：红花种植需要注意哪些病虫害？</div>
+                <div class="faq-answer">A：主要病虫害有根腐病、锈病和蚜虫等。我们采用生物防治为主的综合防治技术，如使用枯草芽孢杆菌防治根腐病，释放瓢虫控制蚜虫，严格限制化学农药使用。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q：红花的最佳采收时间是什么时候？</div>
+                <div class="faq-answer">A：昌宁红花最佳采收期为每年11月中下旬，此时花朵色泽鲜艳、有效成分含量最高。采摘宜在早晨露水未干时进行，以保持花朵完整性和有效成分活性。</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q：如何判断红花的品质好坏？</div>
+                <div class="faq-answer">A：优质红花应色泽鲜艳、呈深红色，无杂质、无霉变。有效成分含量是关键指标，我们的特级干红花红花苷含量≥2.3%，显著高于市场平均水平。</div>
+            </div>
+
+            <!-- 新增常见问题 -->
+            <div class="faq-item">
+                <div class="faq-question">Q：红花种植的密度应该如何控制？</div>
+                <div class="faq-answer">A：红花种植密度应根据土壤肥力、品种特性和种植方式等因素进行调整。一般来说，每亩种植株数在1.5万-2万株之间较为合适。</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部信息栏 -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">首页</a> |
+            <a href="products.html">产品中心</a> |
+            <a href="culture.html">文化之旅</a> |
+            <a href="tech.html">技术交流</a> |
+            <a href="shop.html">在线商城</a> |
+            <a href="help.html">助农行动</a> |
+            <a href="about.html">关于我们</a> |
+            <a href="contact.html">联系我们</a>
+        </div>
+        <p>客服热线：400-XXX-XXXX | 邮箱：yunlinghongzong@xxx.com</p>
+        <p>© 2025 云岭红踪官网  All Rights Reserved</p>
+    </footer>
+</body>
+</html>
